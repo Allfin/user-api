@@ -1,6 +1,7 @@
 <script setup>
 import axios from "axios";
 import { onMounted, reactive } from "vue";
+import Button from "./ui/button/Button.vue";
 
 const state = reactive({
   users: {},
@@ -22,4 +23,6 @@ onMounted(async () => {
 });
 </script>
 
-<template></template>
+<template>
+  <Button>Click Me</Button>
+</template>
