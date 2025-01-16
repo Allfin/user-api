@@ -1,7 +1,7 @@
 <script setup>
 import axios from "axios";
 import { onMounted, ref } from "vue";
-import { useRoute } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 
 const route = useRoute();
 
@@ -28,11 +28,12 @@ onMounted(async () => {
       class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 w-3/4 mx-auto"
     >
       <div class="mb-6">
-        <button
+        <RouterLink
+          to="/"
           class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600"
         >
           Go Back
-        </button>
+        </RouterLink>
       </div>
       <h1 class="text-2xl font-bold text-slate-800 mb-4">User Details</h1>
 
