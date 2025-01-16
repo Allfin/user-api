@@ -1,5 +1,7 @@
 # Aplikasi Vue.js - User Details
 
+Link live demo https://visionary-dragon-c69127.netlify.app/
+
 ## 1. Paduan Instalasi
 
 ### Langkah 1: Clone Repository
