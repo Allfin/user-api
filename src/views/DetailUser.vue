@@ -15,16 +15,15 @@ onMounted(async () => {
       `https://jsonplaceholder.typicode.com/users/${userId}`
     );
     user.value = response.data;
+    console.log(response);
   } catch (error) {
     console.error("Error fetching jobs", error);
-  } finally {
-    state.isLoading = false;
   }
 });
 </script>
 
 <template>
-  <div class="container mx-auto p-6">
+  <div v-if="user && user.address" class="container mx-auto p-6">
     <div
       class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 w-3/4 mx-auto"
     >
